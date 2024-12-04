@@ -1,0 +1,9 @@
+[package]
+name = "app"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+clap = { workspace = true }
+soph = { workspace = true }
+soph-console = { workspace = true }

@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = ["app", "bootstrap"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70.0"
+
+[workspace.dependencies]
+clap = { version = "4.5.21", default-features = false }
+soph = { version = "0.28.0", default-features = false }
+soph-console = { version = "0.28.0", default-features = false }
+
+# workspace
+app = { path = "app" }
+bootstrap = { path = "bootstrap" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+unreachable_pub = "deny"
+
+[workspace.lints.clippy]
+future_not_send = "warn"
+unwrap_used = "warn"
+
+[package]
+name = "console-template"
+version = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+
+[dependencies]
+bootstrap = { workspace = true }
+soph = { workspace = true }
