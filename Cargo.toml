@@ -8,9 +8,9 @@ edition = "2021"
 rust-version = "1.70.0"
 
 [workspace.dependencies]
-clap = { version = "4.5.21", default-features = false }
-soph = { version = "0.28.0", default-features = false }
-soph-console = { version = "0.28.0", default-features = false }
+clap = { version = "4.5.23", default-features = false }
+soph = { version = "0.28.1", default-features = false }
+soph-console = { version = "0.28.1", default-features = false }
 
 # workspace
 app = { path = "app" }
